@@ -1,0 +1,75 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-ast
+      - id: check-added-large-files
+        args: ["--maxkb=1200"]
+      - id: check-case-conflict
+      - id: check-docstring-first
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: check-toml
+      - id: check-yaml
+      - id: debug-statements
+      - id: end-of-file-fixer
+        exclude: "^docs/examples"
+      - id: fix-byte-order-marker
+      - id: fix-encoding-pragma
+        args: [ "--remove" ]
+      - id: name-tests-test
+        args: [ "--pytest-test-first" ]
+      - id: requirements-txt-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/lk16/detect-missing-init
+    rev: v0.1.6
+    hooks:
+      - id: detect-missing-init
+        args: [ "--create", "--python-folders", "deep_rehab_pile" ]
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.5.4
+    hooks:
+      - id: ruff
+        args: [ "--fix"]
+
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v3.16.0
+    hooks:
+      - id: pyupgrade
+        args: [ "--py38-plus" ]
+
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+        args: ["--profile=black", "--multi-line=3"]
+        language_version: python3
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 7.1.0
+    hooks:
+      - id: flake8
+        additional_dependencies: [ flake8-bugbear, flake8-print, Flake8-pyproject ]
+        args: [ "--max-line-length=88", "--extend-ignore=E203" ]
+        language_version: python3
+
+  - repo: https://github.com/psf/black
+    rev: 24.4.2
+    hooks:
+      - id: black
+        language_version: python3
+
+  - repo: https://github.com/nbQA-dev/nbQA
+    rev: 1.8.5
+    hooks:
+      - id: nbqa-isort
+        additional_dependencies: [ isort==5.13.2 ]
+        args: [ "--nbqa-dont-skip-bad-cells", "--profile=black", "--multi-line=3" ]
+      - id: nbqa-black
+        additional_dependencies: [ black==24.2.0 ]
+        args: [ "--nbqa-dont-skip-bad-cells" ]
+      - id: nbqa-flake8
+        additional_dependencies: [ flake8==7.0.0 ]
+        args: [ "--nbqa-dont-skip-bad-cells", "--extend-ignore=E402,E203", "--max-line-length=88" ]
