@@ -3,6 +3,19 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+*.hdf5
+*.keras
+*.csv
+*.pdf
+*.yaml
+!config/config_hydra.yaml
+!.pre-commit-config.yaml
+*.npy
+*.DS_Store
+*.json
+!DeepRehabPileForExperiments.json
+*.out
+
 # C extensions
 *.so
 
