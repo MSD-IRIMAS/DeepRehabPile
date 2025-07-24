@@ -7,7 +7,9 @@ import pkgutil
 import pytest
 
 
-@pytest.mark.parametrize("folder_path", ["src/classifiers/", "src/regressors/"])
+@pytest.mark.parametrize(
+    "folder_path", ["deep_rehab_pile/classifiers/", "deep_rehab_pile/regressors/"]
+)
 def test_all_classes_imported(folder_path):
     """Test if all classes imported in init."""
     init_path = os.path.join(folder_path, "__init__.py")
