@@ -1,0 +1,30 @@
+{
+  "classification": [
+    ["IRDS_clf_bn_EFL", 5], ["IRDS_clf_bn_EFR", 5], ["IRDS_clf_bn_SAL", 5],
+    ["IRDS_clf_bn_SAR", 5], ["IRDS_clf_bn_SFE", 5], ["IRDS_clf_bn_SFL", 5],
+    ["IRDS_clf_bn_SFR", 5], ["IRDS_clf_bn_STL", 5], ["IRDS_clf_bn_STR", 5],
+    ["KERAAL_clf_bn_CTK", 6], ["KERAAL_clf_bn_ELK", 6], ["KERAAL_clf_bn_RTK", 6],
+    ["KERAAL_clf_mc_CTK", 6], ["KERAAL_clf_mc_ELK", 6], ["KERAAL_clf_mc_RTK", 6],
+    ["KIMORE_clf_bn_LA", 5], ["KIMORE_clf_bn_LT", 5], ["KIMORE_clf_bn_PR", 5],
+    ["KIMORE_clf_bn_Sq", 5], ["KIMORE_clf_bn_TR", 5],
+    ["KINECAL_clf_bn_3WFV", 5], ["KINECAL_clf_bn_GGFV", 5],
+    ["KINECAL_clf_bn_QSEC", 5], ["KINECAL_clf_bn_QSEO", 5],
+    ["SPHERE_clf_bn_WUS", 6],
+    ["UCDHE_clf_bn_MP", 5], ["UCDHE_clf_bn_Rowing", 5],
+    ["UCDHE_clf_mc_MP", 5], ["UCDHE_clf_mc_Rowing", 5],
+    ["UIPRMD_clf_bn_DS", 5], ["UIPRMD_clf_bn_HS", 7], ["UIPRMD_clf_bn_IL", 6],
+    ["UIPRMD_clf_bn_SASLR", 8], ["UIPRMD_clf_bn_SL", 8], ["UIPRMD_clf_bn_SSA", 7],
+    ["UIPRMD_clf_bn_SSE", 8], ["UIPRMD_clf_bn_SSIER", 7],
+    ["UIPRMD_clf_bn_SSS", 6], ["UIPRMD_clf_bn_STS", 5]
+  ],
+  "regression": [
+    ["EHE_reg_BWL", 5], ["EHE_reg_BWR", 5], ["EHE_reg_HUD", 5],
+    ["EHE_reg_WB", 5], ["EHE_reg_WF", 5], ["EHE_reg_WH", 5],
+    ["KIMORE_reg_LA", 5], ["KIMORE_reg_LT", 5], ["KIMORE_reg_PR", 5],
+    ["KIMORE_reg_Sq", 5], ["KIMORE_reg_TR", 5],
+    ["UIPRMD_reg_DS", 5], ["UIPRMD_reg_HS", 7], ["UIPRMD_reg_IL", 6],
+    ["UIPRMD_reg_SASLR", 8], ["UIPRMD_reg_SL", 8], ["UIPRMD_reg_SSA", 7],
+    ["UIPRMD_reg_SSE", 8], ["UIPRMD_reg_SSIER", 7],
+    ["UIPRMD_reg_SSS", 6], ["UIPRMD_reg_STS", 5]
+  ]
+}

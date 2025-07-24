@@ -1,0 +1,105 @@
+hydra :
+  job :
+    name : deep-rehab-pile-benchmark
+  run :
+    dir : exps/${hydra.job.name}
+
+output_dir: results/
+root_path: "/home/myuser/code/datasets/"
+
+dataset_name: IRDS_clf_bn_EFL
+fold_number: 0
+
+task: "classification"
+estimator: LITEMV
+train_estimator: True
+force_evaluate_estimator: True
+visualize_latent_space: True
+
+epochs: 1500
+batch_size: 64
+runs: 5
+
+estimator_params:
+
+  ConvLSTM:
+    activation_conv: "relu"
+    activation_lstm: "tanh"
+    n_conv_filters: 64
+    kernel_size: 5
+    hidden_units_lstm: 128
+    dropout_rate: 0.5
+
+  ConvTran:
+    kernel_size: 8
+    factor_filters: 4
+    activation: "gelu"
+    dropout_rate: 0.01
+    emb_size: 16
+    num_heads: 8
+    epsilon: 1e-5
+    dimm_ff: 256
+    activation_ff: "relu"
+
+  DisjointCNN:
+    n_filters: 64
+    kernel_size: Null
+    pool_size: 5
+    hidden_fc_units: 128
+    activation_fc: "relu"
+
+  FCN:
+    n_layers: 3
+    n_filters: Null
+    kernel_size: Null
+    dilation_rate: 1
+    strides: 1
+    padding: "same"
+    activation: "relu"
+    use_bias: True
+
+  GRU:
+    activation: "tanh"
+    hidden_units_gru: 128
+    hidden_units_fc: 30
+
+  H_Inception:
+    depth: 6
+    n_filters: 32
+    n_conv_per_layer: 3
+    kernel_size: 40
+    use_max_pooling: True
+    max_pool_size: 3
+    strides: 1
+    dilation_rate: 1
+    padding: "same"
+    activation: "relu"
+    use_bias: True
+    use_residual: True
+    use_bottleneck: True
+    bottleneck_size: 32
+
+  LITEMV:
+    n_filters: 32
+    kernel_size: 40
+    strides: 1
+    activation: "relu"
+
+  STGCN:
+    n_temporal_convolution_layers: 3
+    n_temporal_filters: 64
+    temporal_kernel_size: Null
+    n_bottleneck_filters: 64
+    activation: "relu"
+    dropout_rate: 0.25
+    n_lstm_layers: 4
+    n_lstm_units: Null
+
+  VanTran:
+    emb_size: 256
+    dimm_ff: 1024
+    n_layers: 4
+    num_heads: 4
+    dropout_rate: 0.1
+    activation: "gelu"
+    epsilon: 1e-6
