@@ -102,7 +102,7 @@ nohup ./run_regression_experiments.sh &
 ## Results
 
 <img id="img-overview"
-      src="static/num-params-plot.png"
+      src="https://github.com/MSD-IRIMAS/DeepRehabPile/blob/main/static/num-params-plot.png"
       class="interpolation-image"
       style="width: 100%; height: 100%; border: none;"> </img>
 
