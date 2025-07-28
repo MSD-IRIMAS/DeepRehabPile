@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "deep-rehab-pile"
-version = "0.0.1"
+version = "0.1.0"
 description = "Deep Learning for Skeleton Based Human Motion Rehabilitation Assessment: A Benchmark"
 readme = { file = "README.md", content-type = "text/markdown" }
 authors = [
