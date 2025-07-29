@@ -10,9 +10,9 @@ Authors: [Ali Ismail-Fawaz](https://hadifawaz1999.github.io/)<sup>1,†</sup>, [
 <sup>2</sup> MICC, University of Florence, Italy<br>
 <sup>3</sup> DSAI, Monash University, Australia
 
-This repository is the source code of the article titled "[Deep Learning for Skeleton Based Human Motion Rehabilitation Assessment: A Benchmark]()".
+This repository is the source code of the article titled "[Deep Learning for Skeleton Based Human Motion Rehabilitation Assessment: A Benchmark](https://arxiv.org/pdf/2507.21018)".
 In this article, we present a benchmark comparison between nine different deep learning architectures on for Skeleton Based Human Rehabilitation Assessment.
-This archive contains 39 classification datasets and 21 extrinsic regression datasets. More details about the dataset information is available on the [article webpage]().
+This archive contains 39 classification datasets and 21 extrinsic regression datasets. More details about the dataset information is available on the [article webpage](https://msd-irimas.github.io/pages/DeepRehabPile/).
 
 ## Abstract
 
@@ -102,7 +102,7 @@ nohup ./run_regression_experiments.sh &
 ## Results
 
 <img id="img-overview"
-      src="https://github.com/MSD-IRIMAS/DeepRehabPile/blob/main/static/num-params-plot.png"
+      src="https://raw.githubusercontent.com/MSD-IRIMAS/DeepRehabPile/main/static/num-params-plot.png"
       class="interpolation-image"
       style="width: 100%; height: 100%; border: none;"> </img>
 
@@ -113,7 +113,7 @@ If you use this work please cite the following:
 @article{ismail-fawaz2025DeepRehabPile,
   author = {Ismail-Fawaz, Ali and Devanne, Maxime and Berretti, Sefano and Weber, Jonathan and Forestier, Germain},
   title = {Deep Learning for Skeleton Based Human Motion Rehabilitation Assessment: A Benchmark},
-  journal={arxiv preprint},
+  journal={arxiv preprint	arXiv:2507.21018},
   year = {2025}
 }
 ```

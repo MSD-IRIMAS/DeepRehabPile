@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "deep-rehab-pile"
-version = "0.1.0"
+version = "0.1.1"
 description = "Deep Learning for Skeleton Based Human Motion Rehabilitation Assessment: A Benchmark"
 readme = { file = "README.md", content-type = "text/markdown" }
 authors = [
@@ -55,6 +55,11 @@ dependencies = [
     "pandas==2.0.3",
     "matplotlib==3.9.0"
 ]
+
+[project.urls]
+Homepage = "https://msd-irimas.github.io/pages/DeepRehabPile/"
+Repository = "https://github.com/MSD-IRIMAS/DeepRehabPile"
+Download = "https://pypi.org/project/deep-rehab-pile/#files"
 
 [project.optional-dependencies]
 dev = [
