@@ -46,7 +46,7 @@ classifiers = [
 ]
 
 dependencies = [
-    "tensorflow==2.18.0",
+    "tensorflow==2.16.1",
     "keras>=3.6.0",
     "numpy==1.26.4",
     "scikit-learn==1.4.2",
