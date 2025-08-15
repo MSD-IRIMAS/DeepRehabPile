@@ -15,7 +15,7 @@ RUN apt install -y jq curl ca-certificates
 RUN pip install --upgrade pip
 RUN pip install numpy==1.26.4
 RUN pip install scikit-learn==1.4.2
-RUN pip install aeon==0.11.1
+RUN pip install aeon==1.2.0
 RUN pip install keras==3.6.0
 RUN pip install hydra-core==1.3.2
 RUN pip install omegaconf==2.3.0
