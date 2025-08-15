@@ -69,7 +69,7 @@ Make sure you have [`jq`](https://jqlang.org/) installed on your system. This pr
 ```
 numpy==1.26.4
 scikit-learn==1.4.2
-aeon==1.0.1
+aeon==1.2.0
 keras==3.6.0
 tensorflow==2.16.1
 hydra-core==1.3.2
