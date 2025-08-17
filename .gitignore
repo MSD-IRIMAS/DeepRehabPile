@@ -6,6 +6,7 @@ __pycache__/
 *.hdf5
 *.keras
 *.csv
+!results/*.csv
 *.pdf
 *.yaml
 !config/config_hydra.yaml
