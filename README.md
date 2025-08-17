@@ -43,7 +43,7 @@ For each dataset sub-folder, there exists a single `json` file containing the in
 
 ## Docker
 
-This repository supports the usage of docker. In order to create the docker image using the [dockerfile](dockerfile), simply run the following command (assuming you have docker installed and nvidia cuda container as well):
+This repository supports the usage of docker. In order to create the docker image using the [dockerfile](https://github.com/MSD-IRIMAS/DeepRehabPile/blob/main/dockerfile), simply run the following command (assuming you have docker installed and nvidia cuda container as well):
 ```bash
 docker build --build-arg USER_ID=$(id -u) --build-arg GROUP_ID=$(id -g) -t deep-rehab-pile-image .
 ```
@@ -80,7 +80,7 @@ matplotlib==3.9.0
 
 ## Running the code on a single experiment
 
-For each experiment, our code runs multiple initialization (default 5) of a model on a single fold of a single dataset, reports the evaluation metrics on each initialization, as well as the ensemble performance of all initializations. The results reported in our article are of the ensemble performance.
+For each experiment, our code runs multiple initialization (default 5) of a model on a single fold of a single dataset, reports the evaluation metrics on each initialization, as well as the ensemble performance of all initialization. The results reported in our article are of the ensemble performance.
 
 If you wish to run a single experiment on a single dataset, on a single fold of this dataset, using a single model then first you have to execute your docker container to open a terminal inside if you're not inside the container:
 ```bash
@@ -90,7 +90,7 @@ Then you can run the following command for example top run LITEMV on the IRDS_cl
 ```bash
 python3 main.py task=classification dataset_name=IRDS_clf_bn_EFL fold_number=0 estimator=LITEMV
 ```
-The code uses [hydra](https://hydra.cc/docs/intro/) for the parameter configuration, simply see the [hydra configuration file](config/config_hydra.yaml) for a detailed view on the parameters of our experiments.
+The code uses [hydra](https://hydra.cc/docs/intro/) for the parameter configuration, simply see the [hydra configuration file](https://github.com/MSD-IRIMAS/DeepRehabPile/blob/main/config/config_hydra.yaml) for a detailed view on the parameters of our experiments.
 
 ## Running the whole benchmark
 
@@ -106,6 +106,8 @@ nohup ./run_regression_experiments.sh &
 ```
 
 ## Results
+
+All the results are available in ``csv`` format in the [```results/``` folder](https://github.com/MSD-IRIMAS/DeepRehabPile/blob/main/results/) 
 
 <img id="img-overview"
       src="https://raw.githubusercontent.com/MSD-IRIMAS/DeepRehabPile/main/static/num-params-plot.png"
