@@ -107,7 +107,7 @@ nohup ./run_regression_experiments.sh &
 
 ## Results
 
-All the results are available in ``csv`` format in the [```results/``` folder](https://github.com/MSD-IRIMAS/DeepRehabPile/blob/main/results/) 
+All the results are available in ``csv`` format in the [results folder](https://github.com/MSD-IRIMAS/DeepRehabPile/blob/main/results/)
 
 <img id="img-overview"
       src="https://raw.githubusercontent.com/MSD-IRIMAS/DeepRehabPile/main/static/num-params-plot.png"
