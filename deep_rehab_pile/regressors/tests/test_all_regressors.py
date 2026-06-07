@@ -28,7 +28,7 @@ def test_all_classifiers(deep_rgs):
             init_file_name = curr_time + "init"
 
             X = np.random.normal(size=(5, 1, 10))
-            y = np.array([0, 0, 1, 1, 1])
+            y = np.array([0.0, 0.3, 1.3, 1.0, 1.0])
 
             if (
                 deep_rgs.__name__ != "ConvTran_REGRESSOR"
