@@ -45,4 +45,4 @@ jobs:
         run: python -m pip list
 
       - name: Run tests
-        run: python -m pytest -n logical
+        run: python -m pytest -n 0 -vv --tb=long
